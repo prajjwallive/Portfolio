@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    height: 6vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background: linear-gradient(-45deg, #06255f, #ffffff, #101111, #d52323);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    .menu {
+        margin-top: 15px;
+        height: 6vh;
+        width: 800px;
+        // background-color: blue;
+        li {
+            list-style-type: none;
+            display: inline;
+            color: white;
+            font-size: 2rem;
+            margin-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        li:hover {
+            color: rgb(255, 0, 0);
+            padding: 10px;
+            background-color: white;
+            font-family: lora;
+            border-radius: 6px;
+        }
+    }
+    .name {
+        padding-bottom: 20px;
+        font-size: 2.8rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 30px;
+        text-decoration: solid;
+        // background-color: blue;
+        margin-top: 10px;
+        width: 50%;
+        cursor: context-menu;
+    }
+    .find_me {
+        margin-top: 0px;
+        height: 6vh;
+        width: 400px;
+        // background-color: pink;
+        display: flex;
+        .linkedin {
+            margin-left: 200px;
+        }
+        .twitter,
+        .github {
+            margin-top: 17px;
+            margin-right: 16px;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    // background-color: red;
+    background-image: url(background.jpg);
+    background-size: cover;
+    display: flex;
+    .profilepic {
+        a {
+            height: 300px;
+            width: 300px;
+            background-image: url(/profile.jpg);
+            background-size: cover;
+            margin-top: 100px;
+            margin-left: 20px;
+            position: absolute;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    .short_description {
+        height: 600px;
+        width: 500px;
+        // background-color: red;
+        background: transparent;
+        text-decoration-style: wavy;
+        color: white;
+        margin-top: 200px;
+        margin-left: 73%;
+        position: absolute;
+        cursor: context-menu;
+        max-width: 490px;
+        padding: 1rem;
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient( to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+        .quotation {
+            height: 150px;
+            width: 500px;
+            // background-color: rgb(68, 0, 255);
+            background: transparent;
+            margin-top: 20px;
+            text-align: center;
+            span {
+                color: inherit;
+                font-size: 3rem;
+                text-decoration: dotted;
+                font-family: 'Courier New';
+                font-style: italic;
+            }
+        }
+        .brief_description {
+            height: 350px;
+            width: 500px;
+            // background-color: aqua;
+            background: transparent;
+            text-align: center;
+            margin-top: 30px;
+            position: absolute;
+            span {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: wavy;
+                font-size: 2.8rem;
+            }
+        }
+    }
+    .connect {
+        height: 80px;
+        width: 80px;
+        // background-color: rgba(0, 0, 255, 0.418);
+        margin-top: 750px;
+        margin-left: 84%;
+        display: flex;
+        .socialmedia2 {
+            a {
+                height: 60px;
+                width: 60px;
+                background-size: contain;
+                background-image: url(/twitter.png);
+                margin-left: 20px;
+                position: absolute;
+            }
+        }
+    }
+    .welcome {
+        height: 60px;
+        width: 565px;
+        background-color: rgb(12, 12, 12);
+        margin-left: 35%;
+        margin-top: 6vh;
+        position: absolute;
+        display: flex;
+        cursor: context-menu;
+        span {
+            text-align: center;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin: 15px 0 0 50px;
+            cursor: context-menu;
+        }
+    }
+}

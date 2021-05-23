@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 6vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #053b21ab, #101111, rgb(2, 39, 87));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    .name {
+        padding-bottom: 20px;
+        font-size: 2.8rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 45%;
+        text-decoration: solid;
+        // background-color: blue;
+        margin-top: 10px;
+        width: 45%;
+        cursor: context-menu;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer {
+    height: 94vh;
+    width: 100%;
+    display: flex;
+    background-image: url(about_background.jpg);
+    background-size: contain;
+    .texts {
+        height: 94vh;
+        width: 60%;
+        // background-color: aqua;
+        h1 {
+            text-align: center;
+            font-family: Circular;
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: 3.2rem;
+            font-weight: 100;
+            color: rgba(250, 243, 243, 0.74);
+            cursor: context-menu;
+        }
+        .container {
+            height: 8-vh;
+            width: 800px;
+            // background-color: red;
+            margin-left: 150px;
+            cursor: context-menu;
+            button {
+                height: 50px;
+                width: 150px;
+                align-self: center;
+                margin-left: 45%;
+                margin-top: 60px;
+                color: white;
+                font-size: 1.8rem;
+                background: linear-gradient(-45deg, #065f41, #115eee, #050011, #d52323);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+        .biotop {
+            font-size: 2rem;
+            word-spacing: 2px;
+            letter-spacing: -1.2px;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.979);
+            font-family: GT Walsheim;
+            text-align: center;
+        }
+        p {
+            font-size: 1.6rem;
+            word-spacing: 2px;
+            letter-spacing: -1.2px;
+            font-style: italic;
+            font-family: GT Walsheim;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+    }
+    .photo {
+        height: 94vh;
+        width: 40%;
+        .circle {
+            border: 3px solid white;
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 88vh;
+            width: 95%;
+            background-image: url(aboutus.jpg);
+            background-size: cover;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            display: flex;
+            overflow: hidden;
+            .nameplate {
+                height: 65px;
+                width: 100%;
+                background-color: white;
+                margin-top: 50%;
+                text-align: center;
+                font-size: 3.2rem;
+                color: Red;
+                opacity: 0%;
+                cursor: pointer;
+            }
+            .nameplate:hover {
+                height: 65px;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.445);
+                margin-top: 50%;
+                text-align: center;
+                font-size: 3.2rem;
+                color: Red;
+                opacity: 100%;
+                transition: 2s;
+            }
+        }
+        .circle:hover {
+            border: 3px solid rgb(8, 146, 238);
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+}

@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    height: 6vh;
+    width: 100%;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: linear-gradient(-45deg, #06255f, #ffffff, #101111, #d52323);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+
+header .menu {
+    margin-top: 15px;
+    height: 6vh;
+    width: 800px;
+}
+
+header .menu li {
+    list-style-type: none;
+    display: inline;
+    color: white;
+    font-size: 2rem;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .menu li:hover {
+    color: red;
+    padding: 10px;
+    background-color: white;
+    font-family: lora;
+    border-radius: 6px;
+}
+
+header .name {
+    padding-bottom: 20px;
+    font-size: 2.8rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    -webkit-text-decoration: solid;
+    text-decoration: solid;
+    margin-top: 10px;
+    width: 50%;
+    cursor: context-menu;
+}
+
+header .find_me {
+    margin-top: 0px;
+    height: 6vh;
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+header .find_me .linkedin {
+    margin-left: 200px;
+}
+
+header .find_me .twitter,
+header .find_me .github {
+    margin-top: 17px;
+    margin-right: 16px;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+footer .profilepic a {
+    height: 300px;
+    width: 300px;
+    background-image: url(profile.jpg);
+    background-size: cover;
+    margin-top: 100px;
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+footer .short_description {
+    height: 600px;
+    width: 500px;
+    background: transparent;
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+    color: white;
+    margin-top: 200px;
+    margin-left: 73%;
+    position: absolute;
+    cursor: context-menu;
+    max-width: 490px;
+    padding: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    -o-border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: -webkit-gradient(linear, left top, left bottom, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
+    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+footer .short_description .quotation {
+    height: 150px;
+    width: 500px;
+    background: transparent;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer .short_description .quotation span {
+    color: inherit;
+    font-size: 3rem;
+    -webkit-text-decoration: dotted;
+    text-decoration: dotted;
+    font-family: 'Courier New';
+    font-style: italic;
+}
+
+footer .short_description .brief_description {
+    height: 350px;
+    width: 500px;
+    background: transparent;
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+}
+
+footer .short_description .brief_description span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-decoration: wavy;
+    text-decoration: wavy;
+    font-size: 2.8rem;
+}
+
+footer .connect {
+    height: 80px;
+    width: 80px;
+    margin-top: 750px;
+    margin-left: 84%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+footer .connect .socialmedia2 a {
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(/twitter.png);
+    margin-left: 20px;
+    position: absolute;
+}
+
+footer .welcome {
+    height: 60px;
+    width: 565px;
+    background-color: #0c0c0c;
+    margin-left: 35%;
+    margin-top: 6vh;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: context-menu;
+}
+
+footer .welcome span {
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 15px 0 0 50px;
+    cursor: context-menu;
+}
+
+
+/*# sourceMappingURL=sass.css.map */
